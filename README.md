@@ -37,11 +37,42 @@
 
 ##  Ubuntu using RVM
 * Check if ruby installed:
- * in cmd: ruby -v
+  * in cmd: ruby -v
 * Check where is installed:
- * in cmd: which ruby
- * If is not installed - install it (see after)
- * if it installed in system user (which command returns: /usr/bin/ruby) - uninstall it and install it (see after)
- * if it installed in your user (which command returns: /home/[your_user_name]/.rvm/) - is ok , no need uninstall
- * do update list of packets:
- * in cmd: sudo apt-get install
+  * in cmd: which ruby
+  * If is not installed - install it (see after)
+  * if it installed in system user (which command returns: /usr/bin/ruby) - uninstall it and install it (see after)
+  * if it installed in your user (which command returns: /home/[your_user_name]/.rvm/) - is ok , no need uninstall
+* do update list of packets:
+  * in cmd: sudo apt-get install
+* install all needed packages. In cmd:
+  * sudo apt-get install libgdbm-dev libncurses5-dev automake libtool bison git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev
+* install RVM: go to rvm.io and execute:
+  * Install GPG key
+  * Install RVM
+* Set terminal settings: Run command as a login shell
+* Check installed version of RVM: 
+  * in cmd: which RVM
+* to check which ruby installed in system:
+  * in cmd: rvm list
+  * currently no ruby installed, so it shall be empty
+* to check which ruby can be installed:
+  * in cmd: list rvm known
+* lets install ruby version 3.0.2:
+  * in cmd: rvm install 3.0.2
+* check again installed. you will see version
+* After installed ruby, also we have access to gem utility. It helps to install different libraries.
+* Lets install debugger:
+  * in cmd: gem install byebug
+* To check where it installed:
+  * in cmd: gem info byebug
+* Install rails:
+  * in cmd: gem install rails
+* NodeJS installation
+* Reminder of node <-> Ruby
+  *          JavaScript <-> Ruby
+  * Interpretator: node <-> ruby
+  * package manager: npm  <-> gem
+  * environment : npm, yarn etc <-> bundler
+  * list of dependencies: package.json <-> Gemfile
+  * dependency management: yarn.lock <-> Gemfile.lock
