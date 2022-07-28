@@ -1,5 +1,6 @@
-# RubySite
-Try write site on Ruby-on-Rails
+# Try write site on Ruby-on-Rails on:
+
+##  Windows
 
 ### Ruby on rails install:
 * Go to https://rubyinstaller.org/downloads/
@@ -33,4 +34,14 @@ Try write site on Ruby-on-Rails
   * Save file
   * in cmd goto directory and write: bundle install
 * in cmd write: rails server
-* 
+
+##  Ubuntu using RVM
+* Check if ruby installed:
+ * in cmd: ruby -v
+* Check where is installed:
+ * in cmd: which ruby
+ * If is not installed - install it (see after)
+ * if it installed in system user (which command returns: /usr/bin/ruby) - uninstall it and install it (see after)
+ * if it installed in your user (which command returns: /home/[your_user_name]/.rvm/) - is ok , no need uninstall
+ * do update list of packets:
+ * in cmd: sudo apt-get install
