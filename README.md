@@ -1,6 +1,7 @@
 # Try write site on Ruby-on-Rails on:
 
 ##  Windows
+* IMPORTANT: in windows at the end it didn't work, better move to ubuntu. If you can handle it - try.
 
 ### Ruby on rails install:
 * Go to https://rubyinstaller.org/downloads/
@@ -76,3 +77,16 @@
   * environment : npm, yarn etc <-> bundler
   * list of dependencies: package.json <-> Gemfile
   * dependency management: yarn.lock <-> Gemfile.lock
+* Add NodeJS repository version 12:
+  * in cmd: curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+* Add yarn repository:
+  * in cmd: curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+  * echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+* install yarn and nodejs:
+  * in cmd: sudo apt-get install nodejs yarn
+* create and run app:
+  * create dir
+  * go inside
+  * in cmd: rails new my_app
+  * go inside my_app
+  * to run server, in cmd: rails start
