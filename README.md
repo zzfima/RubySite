@@ -116,3 +116,6 @@ Things you may want to cover:
   * in cmd: rails new my_app
   * go inside my_app
   * to run server, in cmd: rails start
+
+### rdp
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/use-remote-desktop?tabs=azure-cli
