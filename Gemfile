@@ -46,6 +46,8 @@ group :development, :test do
 
   # Use sqlite3 as the database for Active Record for developement (heroku can not deploy sqlite3)
   gem "sqlite3", "~> 1.4"
+
+  gem 'readapt'
 end
 
 group :development do
