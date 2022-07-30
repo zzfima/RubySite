@@ -1,3 +1,5 @@
+Start from here: https://www.youtube.com/playlist?list=PL87kYOx0cUgh_2FH8flx11o0mbN9vNMIj
+
 # README
 
 This README would normally document whatever steps are necessary to get the
